@@ -11,7 +11,7 @@
 int main()
 {
     int penny, nickel, dime, quarter, half, dollar;
-    int cents = 0;
+    int dollars = 0, cents = 0;
     
     cout << "How many pennies do you have: ";
     cin >> penny;
@@ -27,6 +27,8 @@ int main()
     cin >> dollar;
     
     cents = penny + (nickel * 5) + (dime * 10) + (quarter * 25) + (half * 50) + (dollar * 100);
+    dollars = cents / 100;
+    cents = cents % 100;
     
     cout << "\n";
     
@@ -54,10 +56,8 @@ int main()
         cout << "You have " << dollar << " silver dollar.\n";
     else
         cout << "You have " << dollar << " silver dollars.\n";
-    if (cents == 1)
-        cout << "The value of all your coins is " << cents << " cent.\n";
-    else
-        cout << "The value of all your coins is " << cents << " cents.\n";
+    
+    cout << "The value of all your coins is $" << dollars << "." << cents << ".\n";
     
     return 0;
 }
