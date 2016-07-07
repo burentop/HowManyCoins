@@ -29,13 +29,35 @@ int main()
     cents = penny + (nickel * 5) + (dime * 10) + (quarter * 25) + (half * 50) + (dollar * 100);
     
     cout << "\n";
-    cout << "You have " << penny << " pennies.\n";
-    cout << "You have " << nickel << " nickels.\n";
-    cout << "You have " << dime << " dimes.\n";
-    cout << "You have " << quarter << " quarters.\n";
-    cout << "You have " << half << " half-dollars.\n";
-    cout << "You have " << dollar << " silver-dollars.\n";
-    cout << "The value of all your coins is " << cents << " cents.\n";
+    
+    if (penny == 1)
+        cout << "You have " << penny << " penny.\n";
+    else
+        cout << "You have " << penny << " pennies.\n";
+    if (nickel == 1)
+        cout << "You have " << nickel << " nickel.\n";
+    else
+        cout << "You have " << nickel << " nickels.\n";
+    if (dime == 1)
+        cout << "You have " << dime << " dime.\n";
+    else
+        cout << "You have " << dime << " dimes.\n";
+    if (quarter == 1)
+        cout << "You have " << quarter << " quarter.\n";
+    else
+        cout << "You have " << quarter << " quarters.\n";
+    if (half == 1)
+        cout << "You have " << half << " half-dollar.\n";
+    else
+        cout << "You have " << half << " half-dollars.\n";
+    if (dollar == 1)
+        cout << "You have " << dollar << " silver dollar.\n";
+    else
+        cout << "You have " << dollar << " silver dollars.\n";
+    if (cents == 1)
+        cout << "The value of all your coins is " << cents << " cent.\n";
+    else
+        cout << "The value of all your coins is " << cents << " cents.\n";
     
     return 0;
 }
